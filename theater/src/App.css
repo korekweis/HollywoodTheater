@@ -1,0 +1,16 @@
+* {
+  margin: 0; 
+}
+
+.App-header { 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+body .movie_list{ 
+  padding: 40px 40px 20px 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-bottom: 0.5px solid lightgray;
+}

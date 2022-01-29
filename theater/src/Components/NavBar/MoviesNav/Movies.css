@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Limelight&family=Oswald:wght@200&display=swap');
+
+.movie_info { 
+    display: flex;
+}
+
+.image img { 
+    max-height: 180px;
+}
+
+.info { 
+    margin-left: 30px;
+}
+
+.image_src .MuiButton-root { 
+    margin-top: 3px;
+    font-size: 10px;
+    color: #5D4F4F;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.info .info_element { 
+    align-items: left;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.info .title h2 { 
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+}
+
+.info .rate_time { 
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.info .semi_info { 
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: gray;
+}
+
+.semi_info .MuiSvgIcon-root{ 
+    color: gray !important;
+}
+
+.info .info_element .right_info { 
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.timeslots_div .MuiButton-root{ 
+    margin-right: 10px;
+    background-color: #F8F8FF;
+    color: #5D4F4F;
+}
+
+.timeslots_div .MuiButton-root:hover { 
+    background-color: #5D4F4F;
+    color: white;
+}

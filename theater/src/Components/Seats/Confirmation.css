@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Limelight&family=Oswald:wght@200&display=swap');
+
+.title { 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.confirmation{ 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.confirmation_box img {
+    max-height: 180px;
+}
+
+.movie_words { 
+    margin-left: 30px;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.title{ 
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+}
+
+.rate_time {
+    display: flex;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.right_info { 
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.time { 
+    margin-top: 10px;
+}
+
+.time h1{ 
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+    background-color: #F8F8FF;
+    color: #5D4F4F;
+}
+
+.semi_info { 
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: gray;
+}
+
+.semi_info .MuiSvgIcon-root{ 
+    color: gray !important;
+}
+
+.info .info_element .right_info { 
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.reserved_seats { 
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.number { 
+    margin-left: 10px;
+}
+
+.confirmation_box .box { 
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.MuiButton-root { 
+    align-self: center;
+}
+
+.button {
+    margin-top: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+
+}

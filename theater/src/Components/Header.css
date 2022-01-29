@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+.header { 
+    background-color: #7E1616;
+    color: white;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choices h1 { 
+    font-family: 'Limelight', cursive;
+    background-color: #7E1616;
+}
+
+.choices ul { 
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color:#7E1616;
+}
+
+.choices ul li a { 
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 20px;
+    background-color: #7E1616;
+    color: white;
+    text-decoration: none;
+}
+
+.choices ul li a:hover { 
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 20px;
+    background-color: #7E1616;
+    color: white;
+    text-decoration: underline;
+}
+
+.choices { 
+    display: flex;
+    background-color: #7E1616;
+}
+
+.signIn { 
+    display: flex;
+    background-color: #7E1616;
+}
+
+.signIn h3{ 
+    align-self: center;
+    background-color: #7E1616;
+    color: white;
+}
+
+.MuiSvgIcon-root { 
+    align-self: center;
+    color: white !important;
+}
+
+/* tabs in modal */
+.MuiTabs-flexContainer { 
+    align-self: center;
+    justify-content: center;
+}

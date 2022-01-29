@@ -1,0 +1,11 @@
+.MuiOutlinedInput-root { 
+    margin-bottom: 20px;
+}
+
+.MuiButton-root.MuiButton-contained { 
+    background-color: #F2353B;
+}
+
+.MuiButton-root.MuiButton-contained:hover { 
+    background-color: #D92F35;
+}
