@@ -9,6 +9,8 @@ import { useNavigate } from 'react-router-dom';
 function Movies({id, image, title, rating, length, timeslots}) {
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
+    const [movie, setMovie] = useState(null);
+    const [time, setTime] = useState(null);
     const parameters = {"user": user, "movie": id};
 
     const addToWatchlist = e => { 
@@ -21,6 +23,14 @@ function Movies({id, image, title, rating, length, timeslots}) {
             console.log(user);
         })
         axios.post(`/user/wishlist`, parameters);
+    }
+
+    const FindMovie = (timeslot) => e => {
+        e.preventDefault();
+        axios.get(`/movie/:${id}/:${timeslot.id}`)
+            .then(response => {
+                navigate(`/seats/${id}/${timeslot.id}`, {state: {movie: response.data['movie'], time: response.data['time']}});
+            });
     }
 
     return (
@@ -48,7 +58,7 @@ function Movies({id, image, title, rating, length, timeslots}) {
                     </div>
                     <div class="timeslots_div">
                         {timeslots.map(timeslot => 
-                            <Button onClick={() => navigate(`/seats/${id}/${timeslot.id}`)}>{ timeslot.time }</Button>
+                            <Button onClick={ FindMovie(timeslot) }>{ timeslot.time }</Button>
                         )}
                     </div>
                 </div>

@@ -183,6 +183,25 @@ app.post('/movies/', (req, res) => {
     })
 })
 
+app.get('/movie/:movieId/:timeId', (req, res) => { 
+    let movieId = req.params.movieId;
+    movieId = movieId.substring(1);
+    const timeId = req.params.timeId;
+    let getTimeSlots;
+    let getSeats;
+    const length_timeId = timeId.length;
+    Movies.findOne({ _id: movieId }, (err, movie) => {
+        let title = movie['title'];
+        getTimeSlots = movie['timeslots'];
+        let index = timeId.substring(1, length_timeId);
+        getSeats = getTimeSlots[parseInt(index)-1];
+        console.log("INSIDE"); 
+        console.log(movie);
+        console.log(getSeats["time"]);
+        res.status(201).send({time: getSeats["time"], movie: movie});
+    })
+})
+
 // ROW
 app.get('/rows/:movieId/:timeId', (req, res) => { 
     let movieId = req.params.movieId;
@@ -192,11 +211,12 @@ app.get('/rows/:movieId/:timeId', (req, res) => {
     let getTimeSlots;
     const length_timeId = timeId.length;
     Movies.findOne({ _id: movieId }, (err, movie) => {
-        let title = movie['title'];
+        // let title = movie['title'];
         getTimeSlots = movie['timeslots'];
         let index = timeId.substring(1, length_timeId);
         getSeats = getTimeSlots[parseInt(index)-1];
-        res.status(201).send({seats: getSeats["seats"], time: getSeats["time"], movie: movie});
+        // res.status(201).send({seats: getSeats["seats"], time: getSeats["time"], movie: movie});
+        res.status(201).send({seats: getSeats["seats"]});
     })
 })
 

@@ -15,14 +15,14 @@ function Wishlist() {
     useEffect(() => {
         axios.get('/user/wishlist')
         .then(response => { 
-            console.log(response.data);
+            // console.log(response.data);
             setMovies(response.data);
         })
     })
 
     const removeWatchlist = (id) => e => { 
-        console.log("removing function");
-        console.log(id);
+        // console.log("removing function");
+        // console.log(id);
         axios.post(`/user/removeWishlist`, { "id":id });
     }
 
