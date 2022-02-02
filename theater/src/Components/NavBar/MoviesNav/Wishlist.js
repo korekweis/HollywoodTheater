@@ -30,7 +30,7 @@ function Wishlist() {
         <div>
             <Header/>
             <div class="wishlist_title">
-                <h1>Your Wishlist</h1>
+                <h1>My Wishlist</h1>
             </div>
             <div class="Movies">
                 <div class="movies_div"> 

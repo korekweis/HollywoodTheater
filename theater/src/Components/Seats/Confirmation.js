@@ -18,10 +18,6 @@ function Confirmation() {
     const movie = state.movie;
     const time = state.time;
     const rows = ["A", "B", "C", "D", "E"];
-    // console.log("INSIDE CONFIRMATION");
-    // console.log(seats);
-    // console.log("NEED DATA");
-    // console.log(data);
     const parameters = {"seats": seats, "data": data, "time": time} 
 
     const Confirm = (e) => {

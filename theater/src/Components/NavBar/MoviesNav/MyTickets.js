@@ -22,7 +22,9 @@ function MyTickets() {
     return (
         <div>
             <Header/>
-            <h1>THIS IS MY TICKETS PAGE</h1>
+            <div class="wishlist_title">
+                <h1>My Tickets</h1>
+            </div>
             <div class="Tickets">
                 <div class="ticket_cont">
                     {tickets.map(ticket => 

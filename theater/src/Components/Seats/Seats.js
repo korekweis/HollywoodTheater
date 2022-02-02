@@ -15,8 +15,8 @@ function Seats() {
     const [testLoad,setTestLoad] = useState(false);
     const movie = state.movie;
     const time = state.time;
-    // const [movie, setMovie] = useState(null);
-    // const [time, setTime] = useState(null);
+    const [data_movie, setMovie] = useState(null);
+    const [data_time, setTime] = useState(null);
     let { movieId, timeId } = useParams(); 
     let data = "";
     let chosen_seats = [];
@@ -26,8 +26,8 @@ function Seats() {
             .then(response => {
                 data = response.data;
                 setRows(data['seats']);
-                // setMovie(data['movie']);
-                // setTime(data['time']);
+                setMovie(data['movie']);
+                setTime(data['time']);
                 setTestLoad(true);
             });
     }, [])
@@ -61,7 +61,7 @@ function Seats() {
 
     const Continue = () => { 
         setSeats(chosen_seats);
-        navigate(`/confirm/${movieId}/${timeId}`, { state: {seats_selected: chosen_seats, full_data: rows, time: time, movie: movie}});
+        navigate(`/confirm/${movieId}/${timeId}`, { state: {seats_selected: chosen_seats, full_data: rows, time: data_time, movie: data_movie}});
     }
           
     return (

@@ -215,8 +215,8 @@ app.get('/rows/:movieId/:timeId', (req, res) => {
         getTimeSlots = movie['timeslots'];
         let index = timeId.substring(1, length_timeId);
         getSeats = getTimeSlots[parseInt(index)-1];
-        // res.status(201).send({seats: getSeats["seats"], time: getSeats["time"], movie: movie});
-        res.status(201).send({seats: getSeats["seats"]});
+        res.status(201).send({seats: getSeats["seats"], time: getSeats["time"], movie: movie});
+        // res.status(201).send({seats: getSeats["seats"]});
     })
 })
 
