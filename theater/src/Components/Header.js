@@ -108,7 +108,7 @@ function Header() {
           <h1>Hollywood</h1>
           <ul>
             <li><Link to="/">Movies</Link></li>
-            <li><Link to="/wishlist">Wishlist</Link></li>
+            <li><Link to="/wishlist">Watchlist</Link></li>
             <li><Link to="/myTickets">My Tickets</Link></li>
           </ul>
         </div>
